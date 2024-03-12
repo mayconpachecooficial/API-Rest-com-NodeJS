@@ -3,7 +3,7 @@ const Cart = require('../models/Cart');
 // Aqui adiciona item ao carrinho
 exports.addItem = async (req, res) => {
   try {
-    const userId = req.userId; // Aqui o ID do usuário autenticado deverá ser atribuído pelo middleware de autenticação
+    const userId = req.userId; // Aqui o ID do usuário autenticado será atribuído pelo middleware de autenticação
     const { produtoId, quantidade } = req.body;
 
     // Aqui verifica se o item já está no carrinho
